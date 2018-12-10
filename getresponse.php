@@ -8,12 +8,12 @@
  *  International Registered Trademark & Property of PrestaShop SA
  */
 
-use GrShareCode\Api\Exception\GetresponseApiException;
-use GrShareCode\Validation\Assert\InvalidArgumentException;
-
 if (!defined('_PS_VERSION_')) {
     exit;
 }
+
+// Move all "use" statements in this file:
+include_once _PS_MODULE_DIR_ . '/getresponse/vendor.php';
 
 include_once _PS_MODULE_DIR_ . '/getresponse/vendor/autoload.php';
 include_once _PS_MODULE_DIR_ . '/getresponse/classes/GrApiException.php';
